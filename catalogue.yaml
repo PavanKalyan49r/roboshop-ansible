@@ -71,5 +71,5 @@
   - name: start ands enable catalogue
     ansible.builtin.service:
       name: catalogue
-      state: restart
+      state: restarted
       enabled: yes
