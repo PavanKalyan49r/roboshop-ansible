@@ -1,5 +1,5 @@
 - name: catalogue
-  hodts: catalogue
+  hosts: catalogue
   become: yes
   tasks:
   - name: disable old nodejs and enable nodejs:18
