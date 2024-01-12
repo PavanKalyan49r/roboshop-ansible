@@ -28,11 +28,3 @@
     ansible.builtin.service:
       name: mongod
       state: restarted
-
-  - name: get the categories count
-    ansible.builtin.command:  mongo --host mongodb.pavanaws.online --quiet --eval 'db = db.getSiblingDB("catalogue") ; db.products.count()'
-    register: product_count
-
-  - name: print the count
-    ansible.builtin.debug:
-      msg: "product count: {{product_count}}"
