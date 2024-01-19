@@ -1,0 +1,5 @@
+- name: install shipping component
+  hosts: shipping
+  become: yes
+  tasks:
+  - name: install 
